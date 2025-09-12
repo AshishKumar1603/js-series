@@ -16,6 +16,16 @@ let x = true;// boolean
 let y; // undefined
 let name = null
 
+let getage = age;
+//Here we can grab the same value by using get
+console.log(getage);
+
+
+
+
+/* The variable cretaed by using let it run only inside the block{} that didn't create bug 
+var can access from anywhere in whole function and sometime it create bug
+*/
 console.log(typeof "blue")
 
 console.log(typeof age)
@@ -30,3 +40,25 @@ console.log(typeof null)
 // it itself a 'stand alone value' means itself it is a value(just like a normal values)
 // else.g. let age =18 // 18 is a value of type 'number'
 //         similarly , let noValue = null // here, null is a value type 'object'(typeof null)=> object  
+
+//Object :
+let teaType = ["lemon tea", "orange tea"]
+let user = { firstname:"Ashish", lastname:"Kumar"}
+
+//here we can see "teatype" is Object that contain all the data
+
+/*
+Types of DataType => JavaScript has 8  datatype
+
+String
+Number
+Boolean
+Bigint
+
+Undefined
+Null
+
+Object
+symbol
+
+*/
