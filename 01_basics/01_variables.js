@@ -1,6 +1,6 @@
- const accountId = 142234
- let accountEmail = "akgautan1603@gmail.com"
- var accountPassword ="665544"
+const accountId = 142234
+let accountEmail = "akgautan1603@gmail.com"
+var accountPassword ="665544"
  accountcity = "gorakhpur"
 
 //  accountId = 765546 // not allowed
