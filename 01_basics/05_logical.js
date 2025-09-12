@@ -17,7 +17,7 @@ console.log(isEmailuser || isGoogleuser) // here we use or operator so if anyone
 
 //------------------*****assignment_operator****---------------
 
-let score = 10 + 11;
+//let score = 10 + 11;
 
 let num1 = 10;
 
