@@ -1,30 +1,3 @@
-// Premitive
-
-// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
-
-const score = 100
- 
-const isloggedin = false
-
-const outsidetemp = null
-const id = Symbol('123')
-const anotherId = Symbol('123')
-// here both id and anotherId are same but not equal because it generate unique id so same 
-//description ha no role in uniqueness internally both cretae different unique IDs..
-
-// boolean
-let isActive = true
-let isReallyActive = new Boolean(true)// not recommeded
-
-//null and Undefined
-
-let firstname;
-console.log(firstname);// it is undefined because we didn't define the firstname 
-//or maybe i'll define it in the future..
-let lastname = null;
-console.log(lastname);
-
-
 // **********Reference (Non Primitive)*************
 // Array, Objects, Functions
 
@@ -60,9 +33,7 @@ let userTwo = userOne;
 const username = {
     "first name":"hitesh",
     isLoggedin: true,
-    lastname: "kumar"
-    
-
+    lastname: "kumar" 
 
 };//if we try to change the username directly we can't
 
@@ -71,6 +42,10 @@ console.log(username["first name"]);// by this way we use this..
 console.log(username.lastname)
 console.log(typeof username);
 
-
-
 // Here tha data store in heap so the value take the reference from the heap... 
+
+//******* Array*********
+ 
+let anotheruser = ["Ashish", true];// fist value alway be string..
+
+console.log(anotherUser[0]); 
