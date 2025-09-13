@@ -1,7 +1,13 @@
-const score = 400 // js define that 400 is num but we also expilicitly define 400 as num..
+const score = 100 // js define that 400 is num but we also expilicitly define 400 as num..
 
 const balance = new Number(100)
 console.log(balance); // Here we explpicitly define 100 is num..
+console.log(score);
+//here if we see the datatype of of score and balance both have difference datatype
+//score is Number and balance is Object...
+// so we convert the number into object , everything is object..
+
+
 
 //change the num to string..
 
