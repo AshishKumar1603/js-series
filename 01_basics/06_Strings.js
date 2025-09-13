@@ -29,10 +29,10 @@
  console.log(newStringOne.trim()) // we use trim for remove the whitespace...
 
  //Replace char by new char..
- const url = "https://Ashish.com/Ashsih%20kumar"
+ const url = "https://Ashish.com/Ashish%20kumar"
  console.log(url.replace('%20', '-'));
 
  // Checking that String/url include this String..
 
- console.log(url.includes(Ashish));// it shows true...
+ console.log(url.includes(`Ashish`));// it shows true...
 
