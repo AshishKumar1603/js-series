@@ -27,6 +27,10 @@ teaTypes[1] = "jasmine tea"
 4. Declare an array named 'citiesVisited containing "Mumbai" and "Sydney".
  Add "Berlin" to the array using the push` method. */
 
+  let citiesVisited = ["Mumbai", "Sydney"]
+  //const newcity = "Berlin"
+    citiesVisited.push("Berlin")
+   //console.log(citiesVisited);
 
 
 /*
@@ -34,21 +38,20 @@ teaTypes[1] = "jasmine tea"
 Remove the last element of the array using the pop method and store it in a variable named 'lastOrder.
 */
 
-let teatrders= ["chai","icetea", "matcha","earl grey"]
- let lastOrder= teatrders.pop();
-//  console.log(teatrders);
-
-
-
+let teatraders = ["chai", "iced tea", "matcha", "earl grey"]
+ const lastOrder = teatraders.pop()
+//console.log(teatraders)
+//console.log(lastOrder)
 /*
 6. You have an array named 'popularTeas containing "green tea", "oolong tea", and "chai".
 Create a soft copy of this array named softCopy Teas.*/
 
 let popularTeas = ["green tea", "oolong tea", "chai"]
-let softCopy=popularTeas;
-popularTeas.pop();// if we change here soft copy also get changes..
+let softCopyTeas = popularTeas;
+popularTeas.pop();//changing here softcopy also change...
 //console.log(popularTeas);
-//console.log(softCopy);
+//console.log(typeof softCopyTeas);
+
 
 
 /*
@@ -56,36 +59,41 @@ popularTeas.pop();// if we change here soft copy also get changes..
 Create a hard copy of this array named hardCopyCities.
 */
 
-
-let topCities = ["Berlin", "Singapore","New York"]
- let hardCopyCities = [...topCities]// three dot is used to create hard copy
-// let hardCopyCities = topCities.slice();// another way
-topCities.pop();
-// console.log(hardCopyCities);
+let topCities = ["Berlin", "Singapore", "New York"]
+let hardCopyCities = [...topCities];
+//let hardCopyCities = topCities.slice();// it is also a way of creating hardcopy
+topCities.pop();// making changr in original hass no effect on hardcopy
+//console.log(hardCopyCities)
 
 /*
- 8. You have two arrays: europeanCities containing "Paris" and "Rome", and asianCities "Tokyo" and "Bangkok". containing Merge these two arrays into a new array named worldCities. */
+ 8. You have two arrays: europeanCities containing "Paris" and "Rome", and asianCities
+  "Tokyo" and "Bangkok". containing Merge these two arrays into a new array named worldCities. */
 
- let europeanCities = ["Paris","Rome,"]
- let asianCities = ["Tokyo","Bangkok"]
-// let worldCities = europeanCities + asianCities;
-let worldCities = europeanCities.concat(asianCities);
-//console.log(worldCities);
+let europeanCities = ["Paris", "Rome"]
+let asianCities = ["Tokyo", "Bangkok"]
+// const num1 = europeanCities;
+// const num2 = asianCities;
+// let worldCities = new Array(num1 +',' + num2)
+let worldCities = europeanCities.concat(asianCities);// concat merge two array..
+//console.log(worldCities)
 
 
  /*
- 9. You have an array named teaMenu containing "masala chai", "oolong tea", "green tea", and "earl grey". Find the length of the array and store it in a variable named 'menuLength.
+ 9. You have an array named teaMenu containing "masala chai", "oolong tea", "green tea", and "earl grey".
+  Find the length of the array and store it in a variable named 'menuLength.
 */
 
-let teaMenu = ["masala chai", "oolong tea", "green tea","earl grey"]
+let teaMenu = ["masala chai", "oolong tea", "green tea", "earl grey"]
 let menuLength = teaMenu.length;
-//console.log(menuLength);
+//console.log(menuLength)
+
 
 /*
-10. You have an array named 'cityBucketList containing "Kyoto", "London", "Cape Town", and "Vancouver". Check if "London" is in the array and store the result in a variable named 'isLondonInList`.
+10. You have an array named 'cityBucketList containing "Kyoto", "London", "Cape Town", and "Vancouver".
+ Check if "London" is in the array and store the result in a variable named 'isLondonInList`.
 */
 
 let cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"]
-let isLondonInList = cityBucketList.includes("London");
-//console.log(isLondonInList);
+let isLondonInList = cityBucketList.includes("London")
 
+console.log(isLondonInList)
