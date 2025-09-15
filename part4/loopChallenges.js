@@ -7,7 +7,7 @@ let i = 1
 while(i<=5){
     sum = sum + i;
     i++
-} console.log(sum)
+}// console.log(sum)
 
 
 /*
@@ -21,7 +21,7 @@ while(j >= 1){
      countdown.push(j);
     j--;
 }
-console.log(countdown)
+//console.log(countdown)
 
 
 
@@ -68,7 +68,7 @@ for (let l = 0; l < numbers.length; l++) {
      takenumber = numbers[l] * 2
      multipliedNumbers.push(takenumber)
 }
-console.log(multipliedNumbers)
+//console.log(multipliedNumbers)
 
 
 
@@ -79,7 +79,8 @@ let cities = ["Paris", "New York", "Tokyo", "London"];
 let cityList = [];
 
 for (let c = 0; c < cities.length; c++) {
- const myCity = cities[c]
+    
+       cities[c];const myCity = cities
 
 cityList.push(myCity);
 }
