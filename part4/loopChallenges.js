@@ -14,8 +14,14 @@ while(i<=5){
 2. Write a 'while loop that counts down from 5 to 1 and stores the numbers in an array named countdown
 */
 
+let countdown = []
+let j = 5;
 
-
+while(j >= 1){
+     countdown.push(j);
+    j--;
+}
+console.log(countdown)
 
 
 
@@ -23,54 +29,46 @@ while(i<=5){
 3. Write a do while loop that prompts a user to enter their favorite tea type until they enter "stop". Store each tea type in an array named teaCollection.
 */
 
-// let teaCollection = [];
+ /* let teaCollection = [];
 
-// let tea;
+let tea;
 
-// do {
+do {
 
- // tea = prompt('Enter your favourite tea (type "stop" to finish)');
+ tea = prompt('Enter your favourite tea (type "stop" to finish)');
 
-    // if (tea !== "stop") { 
-    //     teaCollection.push(tea);
-    //       }
-
-    //       } while (tea !== "stop");
-
+     if (tea !== "stop") { 
+         teaCollection.push(tea);
+          }
+     
+    }
+     while (tea !== "stop");
+      console.log(teaCollection)    */              
 
 /*
 4. Write a do while loop that adds numbers from 1 to 3 and stores the result in a variable named total */
 
-// let total=0;
-// let k =1;
-// do{
-//   total=total+k;
-//   k++;
-// }while (k<=3);
-
-
+let total = 0;
+let num = 1;
+do{
+    total = total+ num;
+    num++;
+}while (num <=3 )
+    //console.log(total) 
 
 
 /* 
 5. Write a for loop that multiplies each element in the array [2, 4, 6] by 2 and stores the results in a new array named multipliedNumbers */
 
-/* let multipliedNumbers = [];
-let numbers = [2,4,6];
-// for (initPhase; condition; incr/decre){ }
- for (l=0; l< numbers.length; l++){
-  takeNumber = numbers[l]*2;
-  multipliedNumbers.push(takeNumber);
+let numbers = [2, 4, 6]
 
- }
- console.log(multipliedNumbers); */
- 
+let multipliedNumbers = []
 
-
-
-
-
-
-
+for (let l = 0; l < numbers.length; l++) {
+     takenumber = numbers[l] * 2
+     multipliedNumbers.push(takenumber)
+}
+console.log(multipliedNumbers)
 
 
 
@@ -81,9 +79,8 @@ let cities = ["Paris", "New York", "Tokyo", "London"];
 let cityList = [];
 
 for (let c = 0; c < cities.length; c++) {
-
-cities[c]; const myCity = cities
+ const myCity = cities[c]
 
 cityList.push(myCity);
 }
-//console(cityList);
+console.log(cityList);
