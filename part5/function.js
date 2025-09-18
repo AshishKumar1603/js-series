@@ -62,13 +62,12 @@ chai()
 */
 // const calculateTotal = ( price,quantity)=>price*quantity // (explicit way of writting in one line)
     
-const calculateTotal = ( price,quantity)=>{
-    return price*quantity
+const calculateTotal = (price, quantity)=>{
+    return price*quantity;
 
-}
-let totalCost= calculateTotal(399 ,10)
-//console.log(totalCost);
-
+} 
+let totalCost = calculateTotal(23, 44)
+console.log(totalCost);
 
 
 /* 
@@ -80,7 +79,7 @@ function makeTea(typeOfTea) {
 }
 
 // Ab ek function jo makeTea ko parameter ke roop me accept kare
-function processTeaOrder(makeTea) {
+function processTeaOrder(makeTea) {// yha processTeaOrder ek HOF(higher order function) hai
     // "earl grey" pass karke call karte hain
     return makeTea("earl grey");
 }
@@ -94,13 +93,14 @@ let order = processTeaOrder(makeTea);
 */
 
 function createTeaMaker(){
-    return function(teaType){
-        return `Making ${teaType}`;
+    return function (teaType) {
+        return `making ${teaType}`;
     }
-}
-let teaMaker= createTeaMaker()
+} 
+//createTeaMaker("greentea");
+let teaMaker = createTeaMaker()
 
-//console.log(teaMaker("greentea"));
+console.log(teaMaker("greentea"));
 
 
 
