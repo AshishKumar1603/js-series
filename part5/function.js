@@ -122,3 +122,60 @@ console.log(result); */
 /* Jab ek inner function apne outer function ke variables ko yaad rakhta hai aur unhe baad me use kar sakta hai, chahe outer function return ho chuka ho   => CLOSURE BEHAVIOUR*/
 
 //[[pp9890ku8j8y7gr4sq3frt7mjmu9ol0lki8gt5e]]
+
+
+// **** DO NOT CHANGE the values *****
+/* const a = 18;
+const b = 24;
+
+//Addition of two values
+function add(a, b) {
+    return a+b ;
+} 
+console.log(`add =`, add(a, b));
+
+// Subtract small value from larger one
+function subtract(a, b) {
+  return b -a ;
+}
+console.log(`subtract =`, subtract(a, b));
+    
+
+function multiply(a, b) {
+    return a*b ;
+}
+console.log(`multiply = `, multiply(a, b));
+
+// Divide larger value by small
+function divide(a, b) {
+    return b/a ;
+}
+console.log(`divide =`, divide(a, b));
+
+// Increase value of a by 1
+function increment(a) {
+    return a +1;
+} 
+console.log(`increment =`, increment(a));
+
+// Decrease value of b by 1
+function decrement(b) {
+     return b -1;
+} console.log(`decrement =`, decrement(b));
+
+// Divide larger value by small to find the reminder
+function reminder(a, b) {
+    return b % a;
+}
+console.log(`reminder =`,reminder(a, b));
+ */
+
+
+let a = 18;
+let b = 24;
+ 
+function add() {
+    const result = a + b;
+    return result;
+}
+console.log(`add =`,add(a, b))
