@@ -31,6 +31,16 @@ let str_num = String(someNumber)
 
 //console.log(typeof str_num)
 
+//Convert any value to a boolean, then flip it (true ↔ false).
+function flipBoolean(value) {
+  return !Boolean(value); // Convert to boolean, then flip using "!" it become reverse true is false and false is true.
+}
+
+console.log(flipBoolean(true));  // false
+console.log(flipBoolean(0));     // true
+console.log(flipBoolean("Hi"));  // false
+
+
 //************************************ Operation****************************************************
 
 let value = 3
