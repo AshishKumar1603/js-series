@@ -7,7 +7,6 @@ let myObj = {
     name : "Ashish",
     age : 22,
 }
-
 console.log(typeof isloggedin);
 
 //------Stack(Primitive), Heap(Non-Primitive)
@@ -25,7 +24,6 @@ console.log(anothername);
 let userOne = {
     email: "user#google.com",
     upi: "user@ybl"
-
 }
 
 let userTwo = userOne;
@@ -48,4 +46,4 @@ console.log(typeof username);
  
 let anotheruser = ["Ashish", true];// fist value alway be string..
 
-console.log(anotherUser[0]); 
+console.log(anotherUser[0]);
