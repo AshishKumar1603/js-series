@@ -33,22 +33,22 @@
 
 const employee = { // employee object..
 cacltax(){
-    //console.log("tax rate is 10%");// calctak ye function hai jo employee object k liye invoke ho jayega..    
+    console.log("tax rate is 10%");// calctak ye function hai jo employee object k liye invoke ho jayega..    
 
 },
 };
 const KaranArjun = {
     salary : 50000,
     cacltax(){
-          //console.log("tax rate is 20%");
+          console.log("tax rate is 20%");
           
     },
     
 };
 
-KaranArjun.__proto__ = employee;// yha p employee ko prototype banaya hai..
-
-//console.log(KaranArjun.cacltax())
+//KaranArjun.__proto__ = employee;// yha p employee ko prototype banaya hai..
+Object.setPrototypeOf(KaranArjun, employee)
+console.log(KaranArjun.cacltax())
 
 KaranArjun.cacltax(); 
 //console.log(KaranArjun.__proto__); // ye check kr rha hai ki prototype shi se set hua hai ki nhi..
@@ -168,7 +168,7 @@ Ye parent class ke constructor ko call karta hai aur uske properties/methods ko 
  */
 
 
-class Person{
+/* class Person{
     constructor(){
         this.species = "homo sapiens"
     }
@@ -193,7 +193,7 @@ class Engineer extends Person{
 
  let engobj = new Engineer("information Technology");
 console.log(engobj)
-engobj.work();
+engobj.work(); */
 
 
 
@@ -202,7 +202,7 @@ engobj.work();
 /* Qs. You are creating a website for your college. Create a class User with 2 properties, name & email. It also has a method called viewData() that allows user to view website data.
  */
 
-let DATA = "Secret Information"
+/* let DATA = "Secret Information"
 
 class User{
     constructor(name, email){
@@ -219,14 +219,14 @@ let student2 = new User("Janvi", "jan@gmail.com");
 console.log(student1)
 console.log(student2);
 
-student1.viewData();
+student1.viewData(); */
 
 /* Qs. Create a new class called Admin which inherits from User. Add a new method called editData to Admin that allows it to edit website data.
  */
 
 //let DATA = "Secret Information"
 
-class User{
+/* class User{
     constructor(name, email){
         this.name = name;
         this.email = email;
@@ -251,7 +251,7 @@ class Admin extends User{
 let admin1 = new Admin("admin", "admin@gmail,com")
 
 console.log(admin1)
-admin1.editData();
+admin1.editData(); */
 
 
 // *** new keyword -----
