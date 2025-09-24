@@ -113,9 +113,9 @@ class BankAccount{
 }
 
 let account = new BankAccount()
-console.log(account.deposite(250));
+//console.log(account.deposite(250));
 //console.log(account.balance);// it give undefined because we can't access balance outside the class..
-console.log(account.getBalance())// for acces the balance we use the method "getBalance".
+//console.log(account.getBalance())// for acces the balance we use the method "getBalance".
 //console.log(account.deposite());// NaN
 
 // we only use method to access the data or to modify the data...
@@ -144,4 +144,64 @@ let myMachine = new CoffeMachine();
 //console.log(myMachine.brewCoffe());
 
 //we can print both output by one method..
-console.log(myMachine.pressStartButton());
+//console.log(myMachine.pressStartButton());
+
+
+//***** Polymorphism ******
+class Bird{
+    fly(){
+        return `flying...`
+    }
+}
+
+class Penguin extends Bird{
+    fly(){
+        return `Penguin can't fly..`
+    }
+}
+
+let bird = new Bird()
+let penguin = new Penguin()
+//console.log(penguin.fly());
+//console.log(bird.fly());
+
+// Ek hi method "fly()" lekin alag alag object k liye alag behavior..
+
+
+// **** Static Method *****:
+
+class Calculator{
+      static add(a, b){
+        return a+b;
+    }
+}
+
+//let minicalc = new Calculator()
+//console.log(minicalc.add(2, 5));// minicalc.add() is not a function so it give error..
+
+console.log(Calculator.add(2, 5)); //static method is directly called by it's class.
+
+// *****Getters and Setters:
+
+class Employee{
+    constructor(name, salary){
+        this.name = name;
+        this._salary = salary;
+    }
+
+    get salary(){
+        return `You are not allowed to see salary`
+    }
+
+    set salary(value){
+        if(value < 0){
+            console.error("Invalid Salary")
+        }else{
+            this._salary =value;
+        }
+    }
+}
+
+let emp = new Employee("Ashish", 60000)
+console.log(emp.salary);
+
