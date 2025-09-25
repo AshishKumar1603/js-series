@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM Learning on chai aur code <span style="display: none;">lage raho</span></h1> 
+        <h2>Baby one thousand mile gaddi drive kr k aaya tere ghar p te</h2>
+        <h2>Baby one thousand mile gaddi drive kr k aaya tere ghar pe</h2>
+        <h2>Baby one thousand mile gaddi drive kr k aaya tere ghar pey</h2>
+        <p>Baby one thousand mile gaddi drive kr k aaya tere ghar p</p>
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+<!-- types of selectors: -->
+
+<!-- * querySelector = document.querySelector ko use issiliye krte hai ki Agar page par multiple matching elements(<h1>hello</h1> <h1>hey</h1>)  hain, to yeh sirf first element ko return karega.(hello)
+
+->Flexible and Universal Selector
+
+  querySelector() ke saath tum ID, class, tag, ya complex CSS selector use kar sakte ho.
+
+  Matlab alag-alag functions (getElementById, getElementsByClassName, etc.) ki jagah sirf ek hi method se sab kuch kar sakte ho -->
+
+<!-- * Array.from = DOM me Array.from() ka use array-like objects ko real array me convert karne ke liye kiya jata hai.
+                  =>  Ye special cases me kaam aata hai, jaise NodeList ya HTMLCollection ko real JavaScript array me badalne ke liye, taki hum un par array ke powerful methods (map, filter, reduce, etc.) use kar saken. -->
+
+
+<!-- DOM ke kuch selectors real array return nahi karte, balki array-like objects return karte hain, jaise:
+
+====> querySelectorAll() → NodeList
+
+====> getElementsByClassName() → HTMLCollection
+
+====> Ye array lagte hain lekin full array methods support nahi karte. -->
+
+<!-- ****EXAMPLE***** -->
+
+<!-- <p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>
+
+<script>
+  let paras = document.querySelectorAll("p");
+  console.log(paras); // Output: NodeList(3)
+
+  // Trying to use map directly
+  // ❌ Error aayega kyunki NodeList me map() directly nahi hota
+  paras.map(p => console.log(p.innerText)); 
+</script> -->
+
+<!-- Hum Array.from() ka use karke NodeList ko real array me convert kar sakte hain. -->
+
+<!-- let paras = document.querySelectorAll("p");
+
+// Convert NodeList -> Array
+let paraArray = Array.from(paras);
+
+// Ab map kaam karega ✅
+paraArray.map(p => console.log(p.innerText)); -->
+
+*********BOM(Browser Object Model)**********
+
+it mainly contain 3 Apis...
+1.Screen
+2.Location
+3.Navigator
+
+.DOM HTML document ke saath deal karta hai,
+.BOM browser ke environment aur features ke saath deal karta hai — jaise window, screen, history, location, navigator etc.
+
+.Soch lo DOM = HTML page ke andar ka content,
+.aur BOM = browser ka pura system aur tools jo us content ko manage karte hain.
+
+------------
+
+--Browser ke features ko JavaScript se access aur control karne ka tarika hai.
+
+--Ye directly HTML ke elements ke baare me nahi, balki browser ke objects aur APIs ke baare me kaam karta hai.
+
+--Top-level object window hota hai.
+--Sab kuch window ke under aata hai.
+
