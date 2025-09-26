@@ -47,3 +47,27 @@ document.getElementById("removeLastTask").addEventListener("click", function(){
 })
 
 
+// Example 6
+
+document.getElementById("clickMeButton").addEventListener("dblclick", function(){
+   alert("Chale jaa bsdk")
+})
+
+// Example 7
+
+document.getElementById("teaList").addEventListener("click", function(event){
+   if(event.target && event.target.matches(".teaItem")) {
+    alert("You Selcted: " + event.target.textContent);
+   }
+})
+
+// Example 8
+
+document.getElementById("feedbackForm").addEventListener("submit", function(event){
+  event.preventDefault();
+  let feedback = document.getElementById("feedbackInput").value;
+  console.log(feedback);
+  document.getElementById("feedbackDisplay").textContent = `feedback is : ${feedback}`
+})
+
+
