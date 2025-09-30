@@ -6,6 +6,7 @@ Isko blocking behavior kehte hain.
 
  */
 
+
 /* -->By default: JavaScript synchronous hoti hai.
 
 Async tasks ke liye: JavaScript asynchronous behavior dikhati hai with help of Event Loop and Web APIs.
@@ -14,6 +15,7 @@ Asynchronous programming ke liye:
 .Callbacks
 .Promises 
 .Async/Await use hote hain. */
+
 
 /* ==>Asynchronous Behavior in JavaScript
 
