@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-series</title>
+</head>
+<body>
+    <h1>Tobby is the OG spiderman</h1>
+    <button id="stop">Stop</button> 
+</body>
+ <script> 
+     const sayAshish = function(){
+        console.log("Ashish")
+    
+    }
+    const amazing = function(){
+        document.querySelector('h1').innerHTML
+    ="but Andrew id amazing"
+    }
+ 
+       const changeMe = setTimeout(amazing, 5000)
+       document.querySelector('#stop').addEventListener("click", function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+       })
+ </script>
+</html>
+

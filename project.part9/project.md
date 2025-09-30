@@ -1,7 +1,7 @@
 # Project related to DOM
 
 ## Project Link
-[click](https://stackblitz.com/edit/stackblitz-starters-rsb61crp?file=index.html)
+[click](https://stackblitz.com/edit/vitejs-vite-ydwnyeel?file=5_textEditor%2Fscript.js)
 
 # Solution code(JavaScript)
 

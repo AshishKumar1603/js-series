@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-series</title>
+</head>
+<body>
+    <h1>Tobby is the OG spiderman</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button> 
+</body>
+ <script>
+    const sayDate = function(str){
+    console.log(str, Date.now())
+ }
+ let interval;
+
+  document.querySelector('#start').addEventListener('click', function(){
+     interval = setInterval(sayDate, 1000, "Ashish")
+  })
+
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval(interval)
+  })
+
+ </script>
+</html>
