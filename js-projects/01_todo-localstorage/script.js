@@ -45,10 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Delete button
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
-
+    
+    // Ye part JavaScript ka “interaction logic” hai — matlab, jab user checkbox pe click kare (task complete ya incomplete kare), to list aur progress dono automatically update ho jayein.
     // Checkbox change event - toggle complete
     checkbox.addEventListener("change", () => {
-      task.completed = checkbox.checked;
+      task.completed = checkbox.checked;  //for status update
       if (task.completed) {
         span.classList.add("completed");
       } else {
@@ -61,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Delete button event
     deleteBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      tasks = tasks.filter((t) => t.id !== task.id);
+      tasks = tasks.filter((t) => t.id !== task.id); //Ye line array me se wo task hata deti hai jiska delete button click hua hai.
       li.remove();
       saveTasks();
       updateProgress();
